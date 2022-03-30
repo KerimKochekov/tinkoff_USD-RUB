@@ -17,3 +17,5 @@ If you want to BUY Russian roubles on suitable time, run following script and tr
 ```
 $ ./buy.py
 ```
+
+![](https://github.com/KerimKochekov/tinkoff_USD-RUB/blob/main/sell.png)
