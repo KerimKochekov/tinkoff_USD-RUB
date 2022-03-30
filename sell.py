@@ -2,6 +2,7 @@ from numpy import double
 import requests
 import datetime
 import time
+from pathlib import Path
 
 def sd(x):
 	if x < 10:
@@ -9,10 +10,14 @@ def sd(x):
 	return str(x)
 
 now = datetime.datetime.now()
+name = "database/sell/" + str(now.year)+"-" + str(now.month) + "-" + str(now.day) + ".txt"
+
+myfile = Path(name)
+myfile.touch(exist_ok=True)
 
 mn, mx = 150, 50
 
-with open("database/sell/" + str(now.year)+"-" + str(now.month) + "-" + str(now.day) + ".txt", "r+") as f:
+with open(name, "r+") as f:
 	for line in f:
 		val = double(line.split()[2])
 		mn = min(mn, val)
