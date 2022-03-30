@@ -1,18 +1,18 @@
 # Tinkoff USD/RUB exchange rate
 
-Because of rapid change on exchange rate, I decided to implement my own script to track the USD/RUB in the Tinkoff. The script shows the buy/sell rate in every 30 seconds in the console, meanwhile saving all data with time metadata into database files with name of exchange rate's date. 
+Because of the rapid change in the exchange rate, I decided to implement my own script to track the USD/RUB on the Tinkoff bank platform. The script shows the buy/sell rate every 30 seconds in the console, meanwhile saving all data with time metadata into database files with the name of the exchange rate's date. 
 
 Here is the used source for exchange rate data pulling:
 
 - https://www.tinkoff.ru/api/v1/currency_rates/
 
-If you want to SELL Russian roubles on suitable time, run following script and track the rates:
+If you want to SELL Russian roubles on a suitable time, run the following script and track the rates:
 
 ```
 $ ./sell.py
 ```
 
-If you want to BUY Russian roubles on suitable time, run following script and track the rates:
+If you want to BUY Russian roubles on a suitable time, run the following script and track the rates:
 
 ```
 $ ./buy.py
