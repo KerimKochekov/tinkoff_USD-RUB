@@ -12,10 +12,10 @@ If you want to SELL Russian roubles on a suitable time, run the following script
 $ ./sell.py
 ```
 
+![](https://github.com/KerimKochekov/tinkoff_USD-RUB/blob/main/sell.png)
+
 If you want to BUY Russian roubles on a suitable time, run the following script and track the rates:
 
 ```
 $ ./buy.py
 ```
-
-![](https://github.com/KerimKochekov/tinkoff_USD-RUB/blob/main/sell.png)
